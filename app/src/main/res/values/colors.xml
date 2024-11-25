@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FA0202</color>
+    <color name="lightBlue">#1E9FFb</color>
+    <color name="blue">#0156a9</color>
+    <color name="darkBlue">#002E6C</color>
+    <color name="pink">#e44e54</color>
+    <color name="gray">#f2f6f5</color>
+    <color name="xam">#efeef6</color>
+    <color name="fragment">#f4f4f4</color>
+    <color name="darkGrey">#626262</color>
+</resources>

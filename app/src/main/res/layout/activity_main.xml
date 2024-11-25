@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activity.MainActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:contentDescription="Comeback"
+            android:src="@drawable/icon_back" />
+    </Toolbar>
+
+    <!-- ScrollView để bọc nội dung chính -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_marginTop="0dp"
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/logo_1"
+                android:contentDescription="@string/app_name" />
+
+            <!-- Title -->
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Chào mừng đến với MXH Lotus"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="Đăng nhập hoặc đăng ký tài khoản VietID để tiếp tục sử dụng Lotus"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Buttons -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:background="@drawable/button_rounded"
+                android:text="Đăng nhập"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup_button"
+                android:background="@drawable/button_rounded"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:textSize="15sp"
+                android:text="Đăng ký"
+                android:textAllCaps="false"
+                android:textColor="@color/lightBlue" />
+
+            <!-- Divider with "Hoặc" -->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoặc"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <!-- Apple login button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/apple_login_button"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_rounded"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:text="Đăng nhập bằng Apple"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <!-- VietID login button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_rounded"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/vietid_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="Đăng nhập/đăng ký bằng VietID"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <!-- Terms and conditions text -->
+        <TextView
+            android:id="@+id/terms"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bằng việc đăng nhập/đăng ký, bạn đồng ý với các điều khoản sử dụng của MXH Lotus"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

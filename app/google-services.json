@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "266291501993",
+    "project_id": "lotus-561eb",
+    "storage_bucket": "lotus-561eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266291501993:android:5774caa3d820f02058c2b8",
+        "android_client_info": {
+          "package_name": "com.example.lotus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqfFW3zBQrzkpyFG4qR_Y0dgo552kbd94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

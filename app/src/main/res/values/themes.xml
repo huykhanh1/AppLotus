@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lotus" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Lotus" parent="Base.Theme.Lotus" />
+
+    <style name="CycleImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="CycleImageAvatar">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">10sp</item> <!-- Thay đổi kích thước chữ -->
+        <item name="android:textStyle">bold</item> <!-- Định dạng kiểu chữ -->
+        <item name="android:textColor">@android:color/black</item> <!-- Màu chữ -->
+    </style>
+
+</resources>
